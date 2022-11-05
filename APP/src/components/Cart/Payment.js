@@ -103,7 +103,7 @@ export default function Payment(props) {
         onPress={formik.handleSubmit}
         loading={loading}
       >
-        Pagar {totalPayment && `(${totalPayment} €)`}
+        Pagar {totalPayment && `(Q ${totalPayment})`}
       </Button>
     </View>
   );

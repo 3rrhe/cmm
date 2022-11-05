@@ -46,10 +46,10 @@ export default function Product(props) {
           </Text>
           <View style={styles.prices}>
             <Text style={styles.currentPrice}>
-              {calcPrice(item.product.price, item.product.discount)} €
+              Q {calcPrice(item.product.price, item.product.discount)}
             </Text>
             {item.product.discount && (
-              <Text style={styles.oldPrice}>{item.product.price} €</Text>
+              <Text style={styles.oldPrice}>Q {item.product.price}</Text>
             )}
           </View>
         </View>
