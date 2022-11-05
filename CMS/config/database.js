@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST', 'strapi-ecommerce.g9402.mongodb.net'),
+        host: env('DATABASE_HOST', 'db-host'),
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME', 'ecommerce'),
-        username: env('DATABASE_USERNAME', 'admin'),
-        password: env('DATABASE_PASSWORD', 'admin123456'),
+        database: env('DATABASE_NAME', 'db-name'),
+        username: env('DATABASE_USERNAME', 'db-user'),
+        password: env('DATABASE_PASSWORD', 'db-pass'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
