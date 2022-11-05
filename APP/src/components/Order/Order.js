@@ -20,7 +20,7 @@ export default function Order(props) {
           {order.product.title}
         </Text>
         <Text>Cantidad: {order.quantity}</Text>
-        <Text>Total pagado: {order.productsPayment} €</Text>
+        <Text>Q Total pagado: {order.productsPayment}</Text>
       </View>
     </View>
   );

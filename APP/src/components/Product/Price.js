@@ -16,13 +16,13 @@ export default function Price(props) {
       {discount && (
         <View style={styles.conatinerData}>
           <Text style={styles.dataText}>Precio recomendado:</Text>
-          <Text style={[styles.dataValue, styles.oldPrice]}>{price} €</Text>
+          <Text style={[styles.dataValue, styles.oldPrice]}>Q {price}</Text>
         </View>
       )}
       <View style={styles.conatinerData}>
         <Text style={styles.dataText}>Precio:</Text>
         <Text style={[styles.dataValue, styles.currentPrice]}>
-          {calcPrice(price, discount)} €
+          Q {calcPrice(price, discount)}
         </Text>
       </View>
 
@@ -30,7 +30,7 @@ export default function Price(props) {
         <View style={styles.conatinerData}>
           <Text style={styles.dataText}>Ahorras:</Text>
           <Text style={[styles.dataValue, styles.saving]}>
-            {((price * discount) / 100).toFixed(2)} € ({discount}%)
+            Q {((price * discount) / 100).toFixed(2)} ({discount}%)
           </Text>
         </View>
       )}

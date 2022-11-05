@@ -50,7 +50,7 @@ export default function Product(props) {
           </Text>
           <View style={styles.prices}>
             <Text style={styles.currentPrice}>
-              {calcPrice(product.price, product.discount)} €
+              Q {calcPrice(product.price, product.discount)}
             </Text>
           </View>
         </View>
